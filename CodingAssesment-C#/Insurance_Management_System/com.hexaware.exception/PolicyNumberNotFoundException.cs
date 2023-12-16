@@ -8,18 +8,9 @@ namespace Insurance_Management_System.com.hexaware.exception
 {
     public class PolicyNumberNotFoundException: Exception
     {
-        public PolicyNumberNotFoundException()
+        public PolicyNumberNotFoundException(string message) : base(message)
         {
         }
 
-        public PolicyNumberNotFoundException(string message)
-            : base(message)
-        {
-        }
-
-        public PolicyNumberNotFoundException(string message, Exception innerException)
-            : base(message, innerException)
-        {
-        }
     }
 }
