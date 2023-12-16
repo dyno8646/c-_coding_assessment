@@ -25,7 +25,6 @@ namespace Insurance_Management_System.com.hexaware.dao
             {
                 try
                 {
-                    //connection.Open();
 
                     string insertQuery = "INSERT INTO Policies (policy_number, policy_type, coverage_amount, premium_amount, start_date, end_date) " +
                                          "VALUES (@PolicyNumber, @PolicyType, @CoverageAmount, @PremiumAmount, @StartDate, @EndDate)";
@@ -58,7 +57,6 @@ namespace Insurance_Management_System.com.hexaware.dao
             {
                 try
                 {
-                    //connection.Open();
                     string selectQuery = "SELECT * FROM Policies WHERE policy_id = @PolicyId";
 
                     using (SqlCommand cmd = new SqlCommand(selectQuery, connection))
@@ -94,7 +92,6 @@ namespace Insurance_Management_System.com.hexaware.dao
             {
                 try
                 {
-                    //connection.Open();
 
                     string selectAllQuery = "SELECT * FROM Policies";
 
@@ -124,7 +121,6 @@ namespace Insurance_Management_System.com.hexaware.dao
             {
                 try
                 {
-                    //connection.Open();
 
                     string updateQuery = "UPDATE Policies SET policy_type = @PolicyType, " +
                                          "coverage_amount = @CoverageAmount, premium_amount = @PremiumAmount, " +
@@ -160,7 +156,6 @@ namespace Insurance_Management_System.com.hexaware.dao
             {
                 try
                 {
-                    //connection.Open();
 
                     string deleteQuery = "DELETE FROM Policies WHERE policy_id = @PolicyId";
 
